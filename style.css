@@ -1,0 +1,104 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+ background-image: url("https://images.unsplash.com/photo-1660924198051-d9ea85583073?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+}
+h1{
+    margin: 2px;
+    font-weight: bold;
+}
+.title-1{
+    color: white;
+}
+.title-2{
+    color: #059669;
+}
+.subtitle{
+    color: white;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    padding: 80px 20px 20px 20px;
+    background-color: #1F2937;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+#pass1-el{
+    width: 170px;
+    height: 20px;
+    border: 1px solid green;
+    padding: 5px;
+    margin-right: 7px;
+    border-radius: 6px;
+    background-color: #374151;
+    color: #059669;
+}
+#my-input-1{
+    width: 170px;
+    height: 30px;
+    border: 1px solid green;
+    padding: 5px;
+    margin-right: 7px;
+    border-radius: 6px;
+    background-color: #374151;
+    color: #059669; 
+}
+#my-input-2{
+    width: 170px;
+    height: 30px;
+    border: 1px solid green;
+    padding: 5px;
+    margin-right: 7px;
+    border-radius: 6px;
+    background-color: #374151;
+    color: #059669; 
+}
+#pass2-el{
+    width: 170px;
+    height: 20px;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #374151;
+    color: #059669;
+}
+.pass{
+    display: flex;
+    margin-top: 20px;
+
+}
+.g-pass{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #059669;
+    color: white;
+}
+
+#copy-1{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #C8B276;
+    color: white; 
+    margin-left: 30px;
+}
+#copy-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #C8B276;
+    color: white; 
+}
