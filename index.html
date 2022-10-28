@@ -12,6 +12,17 @@
         <h1 class="title-2">random Password</h1>
 
         <p class="subtitle">Never use an insecure password again.</p>
+        <div class="pass-container">
+            <label for="pass-length" class="passlength-label">Password Length</label>
+            <input type="number" id="pass-length">
+        </div>
+        <br>
+        <div class="alpha-container">
+            <label for="alpha-num" class="alpha-label">Alpha & Num only</label>
+            <input type="checkbox" id="alpha-num" class="alpha-num">
+        </div>
+        
+        <br>
         <button onclick="generate()" class="g-pass">Generate Passwords</button>
         <button onclick="myFunction1()" id="copy-1">Copy-1</button>
         <button onclick="myFunction2()" id="copy-2">Copy-2</button>

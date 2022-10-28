@@ -4,6 +4,8 @@
 // let pass2El =document.getElementById('pass2-el')
 let pass3El = document.getElementById('my-input-1')
 let pass4El = document.getElementById('my-input-2')
+let alphaNum = document.getElementById('alpha-num')
+let lenBtn = document.getElementById('len-btn')
 const characters = ["A","B","C","D","E","F","G","H","I","J","K",
 "L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b",
 "c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s",
@@ -12,14 +14,30 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K",
  "+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 
+const alpha = ["A","B","C","D","E","F","G","H","I","J","K",
+"L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b",
+"c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s",
+"t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7",
+"8", "9"]
 
 function generatePAss(){
+  let passLength = document.getElementById('pass-length').value
     let password='';
-    for(let i=0; i <15;i++){
+    if(alphaNum.checked){
+      for(let i=0; i <passLength;i++){
+        let randNum = Math.floor(Math.random()* alpha.length)
+        password = password + alpha[randNum]
+    
+    }
+    }else{
+      for(let i=0; i <passLength;i++){
         let randNum = Math.floor(Math.random()* characters.length)
         password = password + characters[randNum]
     
     }
+    }
+
+
   return password
 }
 
@@ -29,6 +47,9 @@ function generate(){
     pass3El.value = generatePAss();
     pass4El.value = generatePAss();
 }
+
+
+
 //copy the first password
 function myFunction1() {
     // Get the text field
